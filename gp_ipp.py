@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF, Matern, ConstantKernel as C
 from classes.Gaussian2D import Gaussian2D
-from parameter import *
+from parameters import *
 
 
 class GaussianProcessForIPP():

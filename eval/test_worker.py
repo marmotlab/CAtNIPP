@@ -6,7 +6,7 @@ import time
 import ray
 import torch
 from env import Env
-from AttentionNet import AttentionNet
+from attention_net import AttentionNet
 import scipy.signal as signal
 from multiprocessing import Pool
 from test_parameters import *

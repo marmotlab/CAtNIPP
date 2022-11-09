@@ -7,7 +7,7 @@ import time
 from multiprocessing import Pool
 import numpy as np
 import time
-from AttentionNet import AttentionNet
+from attention_net import AttentionNet
 from runner import Runner
 from test_worker import WorkerTest
 from test_parameters import *

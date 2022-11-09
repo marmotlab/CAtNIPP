@@ -11,9 +11,9 @@ import random
 from torch.cuda.amp.grad_scaler import GradScaler
 from torch.cuda.amp.autocast_mode import autocast
 
-from AttentionNet import AttentionNet
+from attention_net import AttentionNet
 from runner import RLRunner
-from parameter import *
+from parameters import *
 
 ray.init()
 print("Welcome to PRM-AN!")

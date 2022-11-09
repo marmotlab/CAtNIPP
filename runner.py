@@ -2,9 +2,9 @@ import torch
 import numpy as np
 import ray
 import os
-from AttentionNet import AttentionNet
+from attention_net import AttentionNet
 from worker import Worker
-from parameter import *
+from parameters import *
 
 
 class Runner(object):

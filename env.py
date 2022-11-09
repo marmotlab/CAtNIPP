@@ -6,7 +6,7 @@ from classes import PRMController, Obstacle, Utils
 from classes.Gaussian2D import Gaussian2D
 from matplotlib import pyplot as plt
 from gp_ipp import GaussianProcessForIPP
-from parameter import ADAPTIVE_AREA
+from parameters import ADAPTIVE_AREA
 
 
 

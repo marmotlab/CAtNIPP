@@ -5,8 +5,8 @@ import imageio
 import numpy as np
 import torch
 from env import Env
-from AttentionNet import AttentionNet
-from parameter import *
+from attention_net import AttentionNet
+from parameters import *
 import scipy.signal as signal
 
 def discount(x, gamma):
