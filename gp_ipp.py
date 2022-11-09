@@ -97,7 +97,7 @@ class GaussianProcessForIPP():
 
         X = np.array(self.observed_points)
 
-        fig = plt.figure(figsize=(10,10))
+        fig = plt.figure(figsize=(6,6))
         #if self.observed_points:
         #    plt.scatter(X[:, 0].reshape(1, -1), X[:, 1].reshape(1, -1), s=10, c='r')
         plt.subplot(2, 2, 2) # ground truth

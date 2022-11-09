@@ -223,7 +223,7 @@ class Env():
                 plt.plot(x1[i:i + 2], y1[i:i + 2], c='red', linewidth=4, zorder=6)
 
         plt.subplot(2,2,4)
-        plt.title('Interesting area')
+        plt.title('High interest area')
         xh = self.high_info_area[:,0]
         yh = self.high_info_area[:,1]
         plt.hist2d(xh, yh, bins=30, range=[[0,1], [0,1]], vmin=0, vmax=1, rasterized=True)

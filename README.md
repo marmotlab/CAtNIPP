@@ -1,18 +1,18 @@
 # CAtNIPP
-Context-Aware Attention-based Network for Informative Path Planning
+Repository for CAtNIPP: Context-Aware Attention-based Network for Informative Path Planning. Code and model are included.
 
-### Run
-**Training**
+## Run
+#### Training
 1. Install requirements at the bottom.
-2. Set appropriate parameters in `parameters.py`, including `NUM_META_AGENT`, `CUDA_DEVICE`, `BATCH_SIZE`(recommand 256 for every 8GB VRAM).
+2. Set appropriate parameters in `parameters.py`, including `NUM_META_AGENT`, `CUDA_DEVICE`, `BATCH_SIZE` (recommand 256 for every 8GB VRAM).
 3. Name your run with `FOLDER_NAME`.
 4. Run `python driver.py`
 
-**Evaluation**
+#### Evaluation
 1. Set appropriate parameters in `/eval/test_parameters.py`, including `FOLDER_NAME`, `NUM_TEST`, `TRAJECTORY_SAMPLING`, `SAVE_IMG_GAP`, etc.
 2. Run `/eval/test_driver.py`
 
-### Files
+## Files
 * `parameters.py` Training parameters.
 * `driver.py` Driver of training program, maintain & update the global network.
 * `runner.py` Wrapper of the local network.
@@ -28,7 +28,7 @@ Context-Aware Attention-based Network for Informative Path Planning
 ![ts_demo](./result/ts_demo.gif)
 
 ### Requirements
-```xml
+```
 python>=3.6
 numpy>=1.17
 ray>=1.15  % Ray should match python version
