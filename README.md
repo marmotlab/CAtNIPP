@@ -51,8 +51,8 @@ shapely
 ```
 
 ### Authors
-[Yuhong Cao](https://github.com/caoyuhong001)
-[Yizhuo Wang](https://github.com/wyzh98)
-[Apoorva Vashisth]()
-[Haolin Fan]()
+[Yuhong Cao](https://github.com/caoyuhong001)\
+[Yizhuo Wang](https://github.com/wyzh98)\
+[Apoorva Vashisth](https://github.com/AccGen99)\
+[Haolin Fan](https://github.com/FHL1998)\
 [Guillaume Sartoretti](https://github.com/gsartoretti)
