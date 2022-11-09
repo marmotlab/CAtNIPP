@@ -8,6 +8,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.cuda.amp.autocast_mode import autocast
 from parameter import *
 
+
 class SingleHeadAttention(nn.Module):
     def __init__(self, embedding_dim):
         super(SingleHeadAttention, self).__init__()
@@ -233,8 +234,8 @@ class AttentionNet(nn.Module):
 
         self.current_embedding = nn.Linear(embedding_dim*2, embedding_dim)
 
-        self.encoder = Encoder(embedding_dim=embedding_dim, n_head=8, n_layer=1)
-        self.decoder = Decoder(embedding_dim=embedding_dim, n_head=8, n_layer=1)
+        self.encoder = Encoder(embedding_dim=embedding_dim, n_head=4, n_layer=1)
+        self.decoder = Decoder(embedding_dim=embedding_dim, n_head=4, n_layer=1)
         self.pointer = SingleHeadAttention(embedding_dim)
 
         self.LSTM = nn.LSTM(embedding_dim, embedding_dim, batch_first=True)

@@ -224,9 +224,9 @@ class Env():
 
         plt.subplot(2,2,4)
         plt.title('Interesting area')
-        x = self.high_info_area[:,0]
-        y = self.high_info_area[:,1]
-        plt.hist2d(x, y, bins=50, vmin=0, vmax=1, rasterized=True)
+        xh = self.high_info_area[:,0]
+        yh = self.high_info_area[:,1]
+        plt.hist2d(xh, yh, bins=30, range=[[0,1], [0,1]], vmin=0, vmax=1, rasterized=True)
         # plt.scatter(self.start[:,0], self.start[:,1], c='r', s=15)
         # plt.scatter(self.destination[:,0], self.destination[:,1], c='r', s=15)
 

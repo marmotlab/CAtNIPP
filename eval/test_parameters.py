@@ -3,10 +3,10 @@ EMBEDDING_DIM = 128
 USE_GPU = False
 USE_GPU_GLOBAL = True
 NUM_GPU = 1
-NUM_META_AGENT = 1
+NUM_META_AGENT = 10
 GAMMA = 1
-FOLDER_NAME = 'ipp'
-model_path = f'model/{FOLDER_NAME}'
+FOLDER_NAME = 'ipp-4heads'
+model_path = f'../model/{FOLDER_NAME}'
 result_path = f'result/{FOLDER_NAME}'
 
 SEED = 1

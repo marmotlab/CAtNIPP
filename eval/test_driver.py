@@ -134,7 +134,7 @@ class RLRunner(Runner):
         return perf_metrics
 
     def multiThreadedJob(self, episodeNumber, budget_range, sample_length):
-        save_img = True if episodeNumber % SAVE_IMG_GAP == 0 else False
+        save_img = True if (SAVE_IMG_GAP != 0 and episodeNumber % SAVE_IMG_GAP == 0) else False
         #save_img = False
         np.random.seed(SEED + 100 * episodeNumber)
         #torch.manual_seed(SEED + 100 * episodeNumber)

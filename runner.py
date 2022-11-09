@@ -24,7 +24,7 @@ class Runner(object):
         self.localNetwork.load_state_dict(weights)
 
     def singleThreadedJob(self, episodeNumber, budget_range, sample_size, sample_length):
-        save_img = True if (SAVE_IMG_GAP == 0 or episodeNumber % SAVE_IMG_GAP == 0) else False
+        save_img = True if (SAVE_IMG_GAP != 0 and episodeNumber % SAVE_IMG_GAP == 0) else False
         #save_img = False
         worker = Worker(self.metaAgentID, self.localNetwork, episodeNumber, budget_range, sample_size, sample_length, self.device, save_image=save_img, greedy=False)
         worker.work(episodeNumber)
@@ -48,7 +48,7 @@ class Runner(object):
         return jobResults, metrics, info
 
   
-@ray.remote(num_cpus=1, num_gpus=NUM_GPU/NUM_META_AGENT)
+@ray.remote(num_cpus=1, num_gpus=len(CUDA_DEVICE)/NUM_META_AGENT)
 class RLRunner(Runner):
     def __init__(self, metaAgentID):        
         super().__init__(metaAgentID)

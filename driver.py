@@ -56,6 +56,7 @@ def writeToTensorBoard(writer, tensorboardData, curr_episode, plotMeans=True):
 
 
 def main():
+    os.environ['CUDA_VISIBLE_DEVICES'] = str(CUDA_DEVICE)[1:-1]
     device = torch.device('cuda') if USE_GPU_GLOBAL else torch.device('cpu')
     local_device = torch.device('cuda') if USE_GPU else torch.device('cpu')
     
