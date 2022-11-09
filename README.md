@@ -31,7 +31,7 @@ Context-Aware Attention-based Network for Informative Path Planning
 ```xml
 python>=3.6
 numpy>=1.17
-ray>=1.15
+ray>=1.15  % Ray should match python version
 pytorch>=1.7
 scipy
 scikit-learn
