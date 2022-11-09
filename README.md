@@ -1,5 +1,5 @@
-# CAtNIPP
-Repository for CAtNIPP: Context-Aware Attention-based Network for Informative Path Planning. Code and model are included.
+# CAtNIPP: Context-Aware Attention-based Network for Informative Path Planning
+A context-aware neural framework for adaptive informative path planning (IPP) problem.
 
 ## Run
 #### Training
